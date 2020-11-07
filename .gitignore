@@ -1,0 +1,25 @@
+*.fs
+*.sqlite
+*.tmp
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Unit test
+.pytest_cache
+cashback-api/.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+
+# .env files
+.env
+
+# IDEs & Text Editors
+.idea
