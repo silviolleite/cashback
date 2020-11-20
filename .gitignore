@@ -9,7 +9,8 @@ __pycache__/
 
 # Unit test
 .pytest_cache
-cashback-api/.pytest_cache/
+cashbackapi/.pytest_cache/
+.coverage
 
 # Translations
 *.mo
@@ -23,3 +24,9 @@ cashback-api/.pytest_cache/
 
 # IDEs & Text Editors
 .idea
+
+# OS
+.DS_Store
+
+# DB
+*.sqlite3
