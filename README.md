@@ -1,4 +1,4 @@
-# Cash Back
+# Cashback
 
 Uma Rest API (desenvolvida com o Framework Python Django), para revendedores cadastrarem suas compras e acompanhar o retorno de cashback.
 
@@ -6,7 +6,7 @@ O Projeto conta com:
 
 - [x] Banco de dados relacional
 - [x] Logs
-- [x] Teste uniátio
+- [x] Teste unitário
 - [x] Autenticação JWT
 - [ ] Teste de integração
 
@@ -51,7 +51,7 @@ Copie a chave gerada e atribua a variável.
 
 ## Rodando os testes unitários
 
-Rode os testes uniários com o compando
+Rode os testes unitários com o comando:
 
 ```shell script
 $ make test
@@ -59,13 +59,13 @@ $ make test
 
 ## Rodando o projeto
 
-O próximo passo é rodar o projeto e para isso utilize o comando
+O próximo passo é rodar o projeto e para isso utilize o comando:
 
 ```shell script
 $ make runserver
 ```
 
-\o/\o/\o/ SHow de bola! Agora vamos conhecer os endpoints da API.
+\o/\o/\o/ Show de bola! Agora vamos conhecer os endpoints da API.
 
 ## Endpoints da API
 
@@ -73,7 +73,7 @@ Host: `http://127.0.0.1:8000/api`
 
 ### Endpoint: `/seller/register/`
 
-Neste recurso é possível cadastrar um revendedors.
+Neste recurso é possível cadastrar revendedores.
 
 Tipos de requests: [`POST`]
 
@@ -102,7 +102,7 @@ Response:
 
 ### Endpoint: `/token/`
 
-Este endpoint permite obter o token de acesso
+Este endpoint permite obter o token de acesso.
 
 Tipos de requests: [`POST`]
 
@@ -124,7 +124,7 @@ Response:
 
 ## Endpoints privados
 
-A partir de agora todas as requisições deverão conter no Header o token de acesso, exemplo:.
+A partir de agora, todas as requisições deverão conter no `Header` o token de acesso, exemplo:
 
 ```json
 
@@ -134,11 +134,11 @@ A partir de agora todas as requisições deverão conter no Header o token de ac
 
 ### Cadastrar vendas `/cashback/`
 
-Este endpoint permite o revendedor logado cadastre de novas vendas.
+Este endpoint permite que o revendedor logado cadastre de novas vendas.
 
 Tipos de requests: [`GET`, `POST`]
 
-#### POST
+#### Request POST
 Payload:
 ```json
 {
@@ -160,7 +160,7 @@ Response:
 }
 ```
 
-#### GET
+#### Request GET
 
 Response:
 
@@ -191,7 +191,7 @@ Response:
 
 Este endpoint permite visualizar o acumulado de cashback.
 
-Tipos de request: `[GET]`
+Tipos de request: [`GET`]
 
 Response:
 ```json
@@ -203,3 +203,4 @@ Response:
 }
 ```
 
+## That's All!!! =)
