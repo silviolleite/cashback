@@ -49,6 +49,14 @@ Copie a chave gerada e atribua a variável.
 
 `API_TOKEN` = Cole o token de acesso a API externa
 
+## Aplicando as migrações no Banco de Dados
+
+Para aplicar as migrações rode o comando:
+
+```shell script
+$ make migrate
+```
+
 ## Rodando os testes unitários
 
 Rode os testes unitários com o comando:
